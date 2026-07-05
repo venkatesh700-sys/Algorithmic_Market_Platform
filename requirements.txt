@@ -1,0 +1,13 @@
+yfinance
+pandas
+numpy
+scikit-learn
+lightgbm
+xgboost
+requests
+ta
+gnews
+vaderSentiment
+streamlit
+plotly
+mlflow
