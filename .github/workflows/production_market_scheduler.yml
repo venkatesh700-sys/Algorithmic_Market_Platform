@@ -12,7 +12,6 @@ jobs:
   initialize-production-agent:
     runs-on: ubuntu-latest
     
-    # FIXED: This line automatically bypasses the need for the GitHub website settings menus!
     permissions:
       contents: write
 
@@ -24,7 +23,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
+          # FIXED: Cache rule removed to prevent dependency mismatch errors
 
       - name: Download High-Performance Core Packages Infrastructure Dependencies
         run: |
