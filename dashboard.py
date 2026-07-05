@@ -115,7 +115,8 @@ if not df_ledger.empty:
                 color_discrete_map={'WIN': '#00FFCC', 'LOSS': '#FF3366'},
                 template="plotly_dark"
             )
-            st.plotly_chart(fig_status, use_container_width=True)
+            st.plotly_chart(fig_status, use_container_width=True, key=f"status_chart_{label_context}")
+
             
         # --- OPTIONAL DIAGNOSTICS FOR UNEXPECTED POSITION LOSSES ---
         if not losses_df.empty:
