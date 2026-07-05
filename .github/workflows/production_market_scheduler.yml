@@ -11,6 +11,10 @@ on:
 jobs:
   initialize-production-agent:
     runs-on: ubuntu-latest
+    
+    # FIXED: This line automatically bypasses the need for the GitHub website settings menus!
+    permissions:
+      contents: write
 
     steps:
       - name: Code Inventory Checkouts
